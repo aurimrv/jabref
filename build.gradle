@@ -60,6 +60,8 @@ mainClassName = "org.jabref.JabRefMain"
 ext.minRequiredJavaVersion = "1.8.0_144"
 ext.allowJava9 = false
 
+//applicationDefaultJvmArgs = ["-Dtestfx.robot=glass -Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw"]
+
 sourceSets {
     main {
         java {
