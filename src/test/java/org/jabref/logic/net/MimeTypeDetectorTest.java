@@ -22,7 +22,7 @@ public class MimeTypeDetectorTest {
 
     @Test
     public void handlePermanentRedirections() throws IOException {
-        String redirectedUrl = "http://localhost:8080/redirection";
+        String redirectedUrl = "http://localhost:8081/redirection";
 
         stubFor(any(urlEqualTo("/redirection"))
                 .willReturn(
@@ -55,7 +55,7 @@ public class MimeTypeDetectorTest {
 
     @Test
     public void beTrueForPDFMimeTypeVariations() throws IOException {
-        String mimeTypeVariation = "http://localhost:8080/mimevariation";
+        String mimeTypeVariation = "http://localhost:8081/mimevariation";
 
         stubFor(any(urlEqualTo("/mimevariation"))
                 .willReturn(
@@ -68,7 +68,7 @@ public class MimeTypeDetectorTest {
 
     @Test
     public void beAbleToUseHeadRequest() throws IOException {
-        String mimeTypeVariation = "http://localhost:8080/mimevariation";
+        String mimeTypeVariation = "http://localhost:8081/mimevariation";
 
         stubFor(head(urlEqualTo("/mimevariation"))
                 .willReturn(
@@ -81,7 +81,7 @@ public class MimeTypeDetectorTest {
 
     @Test
     public void beAbleToUseGetRequest() throws IOException {
-        String mimeTypeVariation = "http://localhost:8080/mimevariation";
+        String mimeTypeVariation = "http://localhost:8081/mimevariation";
 
         stubFor(head(urlEqualTo("/mimevariation"))
                 .willReturn(
