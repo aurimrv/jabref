@@ -1,0 +1,27 @@
+Para subir corretamente no SonarQube o projeto JabRef na plataforma Window é necessário comentar alguns casos de teste que estão interrompendo a execução da máquina virtual Java durante o processo de build.
+
+São eles:
+
+src/test/java
+
+org.jabref.logic.importer.fileformat.MrDLibImporterTest.java
+org.jabref.logic.util.io.RegExpBasedFileFinderTests.java
+org.jabref.logic.util.io.FileUtilTest.java
+org.jabref.logic.net.URLDownloadTest.java
+org.jabref.logic.exporter.BibtexDatabaseWriterTest.java
+org.jabref.gui.search.GrammarBasedSearchRuleDescriberTest.java
+org.jabref.gui.util.TooltipTextUtilTest.java
+org.jabref.gui.search.ContainsAndRegexBasedSearchRuleDescriberTest.java
+
+Para evitá-los, basta renomeá-los para:
+
+src/test/java
+
+org.jabref.logic.importer.fileformat.MrDLibImporterTest.java.old
+org.jabref.logic.util.io.RegExpBasedFileFinderTests.java.old
+org.jabref.logic.util.io.FileUtilTest.java.old
+org.jabref.logic.net.URLDownloadTest.java.old
+org.jabref.logic.exporter.BibtexDatabaseWriterTest.java.old
+org.jabref.gui.search.GrammarBasedSearchRuleDescriberTest.java.old
+org.jabref.gui.util.TooltipTextUtilTest.java.old
+org.jabref.gui.search.ContainsAndRegexBasedSearchRuleDescriberTest.java.old
