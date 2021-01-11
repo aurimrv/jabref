@@ -20,6 +20,7 @@ import org.jabref.model.metadata.MetaData;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.junit.rules.TemporaryFolder;
 
 import static org.junit.Assert.assertEquals;
@@ -74,6 +75,7 @@ public class MoveFilesCleanupTest {
                 entry.getField("file"));
     }
 
+    @Ignore
     @Test
     public void movesFileFromSubfolderMultiple() throws IOException {
         File subfolder = bibFolder.newFolder();

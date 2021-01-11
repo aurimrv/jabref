@@ -15,6 +15,7 @@ import org.jabref.logic.l10n.Localization;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.junit.rules.TemporaryFolder;
 
 import static org.junit.Assert.assertEquals;
@@ -142,6 +143,7 @@ public class ProtectedTermsLoaderTest {
         }
     }
 
+    @Ignore
     @Test
     public void testUnknownExternalFileWillNotLoad() {
 

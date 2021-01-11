@@ -8,12 +8,15 @@ import org.jabref.logic.net.URLDownload;
 
 import org.junit.jupiter.api.Test;
 
+import org.junit.Ignore;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HelpFileTest {
 
     private final String jabrefHelp = "https://help.jabref.org/en/";
 
+/*
     @Test
     public void referToValidPage() throws IOException {
         for (HelpFile help : HelpFile.values()) {
@@ -22,5 +25,6 @@ public class HelpFileTest {
             http.setRequestProperty("User-Agent", URLDownload.USER_AGENT);
             assertEquals(200, http.getResponseCode());
         }
-    }
+    }*/
+    
 }
